@@ -74,3 +74,9 @@ group :test do
 end
 
 gem "dotenv-rails"
+
+gem "dockerfile-rails", ">= 1.2", :group => :development
+
+gem "pg", "~> 1.4.6"
+
+gem "redis", "~> 5.0"
