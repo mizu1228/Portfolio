@@ -1,0 +1,32 @@
+<%= render 'shared/header'%>
+<div class="contact-main">
+  <h2 class="contact-mt">Contact</h2>
+  <p class="contact-st text-secondary">- お問い合わせ -</p>
+  <p>
+    WinGs に関心をお寄せいただきありがとうございます。<br>
+    お問い合わせ内容を以下フォームを記入のうえ送信願います。<br>
+    内容を確認して担当者より連絡を差し上げます。
+  </p>
+
+  <%= form_for(@contact, url: confirm_path) do |f| %>
+    <div class="form-group" id="form-mini">
+      <%= f.label :name, 'お名前*' %>
+      <%= f.text_field :name, autofocus: true, class: 'form-control' %>
+    </div>
+
+    <div class="form-group" id="form-mini">
+      <%= f.label :email, 'メールアドレス*' %>
+      <%= f.text_field :email, autofocus: true, class: 'form-control' %>
+    </div>
+
+    <div class="form-group" id="form-mes">
+      <%= f.label :message, 'メッセージ*' %>
+      <%= f.text_area :message, size: '10x10', class: 'form-control' %>
+    </div>
+
+    <div class="btn" id="contact-btn">
+      <%= f.submit '送信する', class:"btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
+<%= render 'shared/footer'%>

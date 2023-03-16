@@ -1,0 +1,22 @@
+.portfolio-main {
+  height: calc(100% - 120px);
+  text-align: center;
+
+  .port {
+    margin: 20px auto;
+  }
+
+  .col {
+    margin: 30px 20px;
+  }
+
+  .card {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .nomad-diary {
+    height: auto;
+    width: 100%;
+  }
+}

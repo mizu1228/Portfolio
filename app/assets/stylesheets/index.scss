@@ -1,0 +1,33 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.main {
+  height: calc(100vh - 120px);
+  background: image-url('ptf-bg-img.jpg') no-repeat;
+  background-position: center center ;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 20px;
+
+  .main-content {
+    // margin: 0 20px 0 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    max-width: 960px;
+    // background-color: rgba(128, 128, 128, 0.452);
+
+    .index-philosophy {
+      color: black;
+      margin-top: 40px;
+    }
+
+    .index-message {
+      margin-top: 20px;
+      line-height: 30px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<%= render 'shared/header'%>
+<div class="portfolio-main">
+  <h2 class="port">Portfolio</h2>
+
+    <div class="col">
+      <div class="card">
+        <%= image_tag 'nomad_diary.jpeg', class:"nomad-diary", alt:"nomad-diary"%>
+        <h5 class="card-title">ノマド日記</h5>
+        <p class="card-text">
+          アウトドア情報を中心に発信するブログ<br>
+          主にワードプレスで構成、編集しています。
+        </p>
+        <div class="btn">
+          <%= link_to 'Show!', 'https://mizu1228.com/', class:"btn btn-primary"%>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <%= image_tag 'nomad_diary.jpeg', class:"nomad-diary", alt:"nomad-diary"%>
+        <h5 class="card-title">Campary.</h5>
+        <p class="card-text">
+          アウトドアに特化した新しいSNSを提案<br>
+          主にRubyOnRailsで構成、編集しています。
+        </p>
+        <div class="btn">
+          <%= link_to 'Show!', '#', class:"btn btn-primary"%>
+        </div>
+      </div>
+    </div>
+</div>
+<%= render 'shared/footer'%>

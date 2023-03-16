@@ -1,0 +1,16 @@
+.about-main {
+  height: calc(100vh - 120px);
+
+  .about-content {
+    margin: 60px 80px;
+
+    .about-message {
+      margin-top: 30px;
+      line-height: 1.5em;
+    }
+
+    .port-btn {
+      margin-top: 200px;
+    }
+  }
+}
